@@ -1,6 +1,6 @@
 FROM vulhub/openssh:7.7
 
-LABEL maintainer="phithon <root@leavesongs.com>"
+ENV ROOT_PASSWORD=vulhub
 
 RUN set -ex \
     && adduser --home /home/vulhub --shell /bin/bash --disabled-password --gecos "" vulhub \
